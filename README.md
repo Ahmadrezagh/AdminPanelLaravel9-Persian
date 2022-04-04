@@ -7,7 +7,7 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## Laravel 9 Admin Paenl
+## Laravel 9 Admin Panel
 
 - Login and register
 - Multiple admin
