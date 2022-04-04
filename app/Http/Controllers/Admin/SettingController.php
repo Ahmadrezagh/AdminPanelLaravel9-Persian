@@ -62,11 +62,10 @@ class SettingController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($name)
     {
-         $group = SettingGroup::findOrFail($id);
-         return view('admin.settings.index',compact('group'));
-
+         $group = SettingGroup::findByNameOrFail($name);
+        return view('admin.settings.index',compact('group'));
     }
 
     /**
@@ -87,9 +86,9 @@ class SettingController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $name)
     {
-        $group = SettingGroup::findOrFail($id);
+        $group = SettingGroup::findByNameOrFail($name);
         foreach ($group->settings as $setting)
         {
             if ($request[$setting->id])
@@ -98,7 +97,7 @@ class SettingController extends Controller
                 {
                     $file_url = upload_file($request[$setting->id],'/settings',$setting->name);
                     Setting::where('id','=',$setting->id)->update([
-                       'value' => $file_url
+                        'value' => $file_url
                     ]);
                 }else{
                     Setting::where('id','=',$setting->id)->update([

@@ -15,4 +15,14 @@ class SettingGroup extends Model
     {
         return $this->hasMany(Setting::class);
     }
+
+    public static function findByNameOrFail($name)
+    {
+        $result = self::query()->where('name','=',$name)->first();
+        if($result)
+        {
+            return $result;
+        }
+        abort(404);
+    }
 }
