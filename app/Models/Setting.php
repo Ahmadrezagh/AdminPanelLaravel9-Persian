@@ -11,6 +11,8 @@ class Setting extends Model
     use HasFactory;
     use SoftDeletes;
 
+    protected $fillable = ['name','type','description','value','setting_group_id'];
+
     public function group()
     {
         return $this->belongsToMany(SettingGroup::class);
