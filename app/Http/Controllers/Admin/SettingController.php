@@ -86,9 +86,9 @@ class SettingController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $name)
+    public function update(Request $request, $id)
     {
-        $group = SettingGroup::findByNameOrFail($name);
+        $group = SettingGroup::findOrFail($id);
         foreach ($group->settings as $setting)
         {
             if ($request[$setting->id])

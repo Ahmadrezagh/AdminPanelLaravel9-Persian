@@ -63,6 +63,8 @@
 </head>
 
 <body class="main-body leftmenu">
+@include('sweetalert::alert', ['cdn' => "https://cdn.jsdelivr.net/npm/sweetalert2@9"])
+
 <!-- Loader -->
 <div id="global-loader">
     <img src="{{asset('dashboard/assets/img/loader.svg')}}" class="loader-img" alt="لودر">
@@ -299,7 +301,7 @@
                                 @if(auth()->user()->isSuperAdmin())
                                     مدیر ارشد وبسایت
                                 @elseif(auth()->user()->isAdmin())
-                                    {{$auth()->user()->role()->first()->name}}
+                                    {{auth()->user()->role()->first()->name ?? ' - '}}
                                 @else
                                     مشتری
                                 @endif
@@ -416,7 +418,7 @@
                                     @if(auth()->user()->isSuperAdmin())
                                         مدیر ارشد وبسایت
                                     @elseif(auth()->user()->isAdmin())
-                                        {{$auth()->user()->role()->first()->name}}
+                                        {{auth()->user()->role()->first()->name ?? ' - '}}
                                     @else
                                         مشتری
                                     @endif
