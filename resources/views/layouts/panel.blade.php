@@ -520,7 +520,7 @@
 <script src="{{asset('dashboard/assets/switcher/js/switcher-rtl.js')}}"></script>
 
 <!-- jQuery -->
-<script src="{{URL::to('/').'/plugins/datatables/jquery.dataTables.min.js'}}"></script>
+<script src="{{URL::to('/').'/plugins/dataTables/jquery.dataTables.min.js'}}"></script>
 <script src="{{URL::to('/').'/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js'}}"></script>
 <script src="{{URL::to('/').'/plugins/datatables-responsive/js/dataTables.responsive.min.js'}}"></script>
 <script src="{{URL::to('/').'/plugins/datatables-responsive/js/responsive.bootstrap4.min.js'}}"></script>
