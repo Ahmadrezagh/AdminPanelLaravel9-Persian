@@ -19,10 +19,10 @@
 
 ## Installation guid
 
-- git clone git@github.com:Ahmadrezagh/AdminPanelLaravel9-Persian.git
-- composer install
-- php artisan install
-- php artisan reset [this is for reseting database]
+- `git clone git@github.com:Ahmadrezagh/AdminPanelLaravel9-Persian.git`
+- `composer install`
+- `php artisan install`
+- `php artisan reset` [this is for reseting database]
 
 
 ## Users
