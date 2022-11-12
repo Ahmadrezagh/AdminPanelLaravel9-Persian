@@ -56,7 +56,7 @@
                                             </div>
                                             <div class="form-group">
                                                 <label for="exampleInputPassword1">تکرار رمز عبور</label>
-                                                <input type="password" name="re_password" class="form-control" id="exampleInputPassword1" placeholder="تکرار رمز عبور" required>
+                                                <input type="password" name="password_confirmation" class="form-control" id="exampleInputPassword1" placeholder="تکرار رمز عبور" required>
                                             </div>
                                             <div class="form-group">
                                                 <label for="exampleInputFile">تصویر پروفایل</label>
@@ -180,7 +180,7 @@
                                                     </div>
                                                     <div class="form-group">
                                                         <label for="exampleInputPassword1">تکرار رمز عبور</label>
-                                                        <input type="password" name="re_password" class="form-control" id="exampleInputPassword1" placeholder="Password" >
+                                                        <input type="password" name="password_confirmation" class="form-control" id="exampleInputPassword1" placeholder="Password" >
                                                     </div>
                                                     <div class="form-group">
                                                         <label for="exampleInputFile">تصویر پروفایل</label>
