@@ -24,6 +24,7 @@ function upload_file($file,$file_path = null,$name = null ): string
     // Generate image path
     return strval($path."/".$file_name);
 }
+
 function upload_files($files = null , $file_path = null , $random_name = false )
 {
     if($files != null )
@@ -38,15 +39,5 @@ function upload_files($files = null , $file_path = null , $random_name = false )
     }
 }
 
-if (!function_exists('try_catch_null')) {
-    function try_catch_null($closure)
-    {
-        try {
-            return $closure();
-        } catch (Exception $ex) {
-            return null;
-        }
-    }
-}
 
 
