@@ -7,9 +7,9 @@ use Illuminate\Foundation\Http\FormRequest;
 
 class StoreAdminRequest extends FormRequest
 {
-    public function validated()
+    public function validated($key = null, $default = null)
     {
-        return array_merge(parent::validated(),['type_id' => 2]);
+        return array_merge(parent::validated($key, $default),['type_id' => 2]);
     }
 
     /**
