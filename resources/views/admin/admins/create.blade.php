@@ -30,7 +30,7 @@
             <div class="container-fluid">
                 <div class="row justify-content-center">
                     <div class="col-md-6 jumbotron  ">
-                        <form action="{{route('admin.store')}}" method="POST">
+                        <form action="{{route('admins.store')}}" method="POST">
                             @csrf
                             <div class="form-group">
                                 <label for="exampleInputEmail1">نام</label>

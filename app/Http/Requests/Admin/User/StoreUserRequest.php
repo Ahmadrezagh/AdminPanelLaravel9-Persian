@@ -12,6 +12,7 @@ class StoreUserRequest extends FormRequest
         return array_merge(parent::validated($key, $default),['type_id' => 3]);
     }
 
+
     /**
      * Determine if the user is authorized to make this request.
      *
